@@ -2,68 +2,68 @@
 
 /* CSS Reset */
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 * {
-    margin: 0;
+  margin: 0;
 }
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Poppins', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 input, button, textarea, select {
-    font: inherit;
+  font: inherit;
 }
 p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 #root, #__next {
-    isolation: isolate;
+  isolation: isolate;
 }
 
 :root {
-    --light: #f7f7f7;
-    --dark: #242424;
-    --accent1: #e45117;
-    --accent2: #e7e552;
+  --light: #f7f7f7;
+  --dark: #242424;
+  --accent1: #e45117;
+  --accent2: #e7e552;
 }
 
 /* Themes */
 .light {
-    --bg: var(--light);
-    --text: var(--dark);
-    --theme-button-bg: var(--accent2);
-    --theme-button-text: var(--dark);
+  --bg: var(--light);
+  --text: var(--dark);
+  --theme-button-bg: var(--accent2);
+  --theme-button-text: var(--dark);
 }
 .dark {
-    --bg: var(--dark);
-    --text: var(--light);
-    --theme-button-bg: var(--accent1);
-    --theme-button-text: var(--light);
+  --bg: var(--dark);
+  --text: var(--light);
+  --theme-button-bg: var(--accent1);
+  --theme-button-text: var(--light);
 }
 
 /* Header */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    margin: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 2rem;
 }
 .navbar__brand {
-    cursor: pointer;
+  cursor: pointer;
 }
 .navbar__themeSwitcher {
-    transition: 500ms ease-in-out;
-    cursor: pointer;
-    border-radius: 1rem;
-    width: 5rem;
-    background-color: var(--theme-button-bg);
-    color: var(--theme-button-text);
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 5rem;
+  background-color: var(--theme-button-bg);
+  color: var(--theme-button-text);
 }
