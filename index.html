@@ -4,13 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="This is a portfolio page by MKS">
-  <title>mksdesuyo</title>
+  <title>MKS's Ornament</title>
   <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body class="light">
+<body>
   <header class="navbar">
     <h1 class="navbar__brand">Rizqi MKS</h1>
-    <button id="themeSwitcher" class="navbar__themeSwitcher"></button>
+    <nav class="navbar__menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#">Home</a></li>
+        <li class="menu__item"><a href="#">About</a></li>
+        <li class="menu__item"><a href="#">Projects</a></li>
+        <li class="menu__item"><a href="#">Contact</a></li>
+        <li class="menu__item"><button id="themeSwitcher" class="navbar__themeSwitcher"></button></li>
+      </ul>
+    </nav>
+
+    <!-- Offcanvas Navbar Menu -->
+    <button id="menuButton" class="navbar__menu-button"><span class="fa-solid fa-bars" aria-hidden="true"></span></button>
+    <ul class="dropdown__menu-list">
+      <li class="dropdown__menu-item"><a href="#">Home</a></li>
+      <li class="dropdown__menu-item"><a href="#">About</a></li>
+      <li class="dropdown__menu-item"><a href="#">Projects</a></li>
+      <li class="dropdown__menu-item"><a href="#">Contact</a></li>
+      <li class="dropdown__menu-item"><button id="dropdownThemeSwitcher" class="navbar__themeSwitcher"></button></li>
+    </ul>
   </header>
   
   <script src="https://kit.fontawesome.com/73346532eb.js" crossorigin="anonymous"></script>
