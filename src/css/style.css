@@ -61,6 +61,88 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #147efb;
 }
 
+.navbar-menu__hamburger-button {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: large;
+}
+
+.navbar-menu__hamburger-button:hover {
+  cursor: pointer;
+}
+
+.navbar-menu__offcanvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: -100% !important;
+  z-index: 99;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-menu__offcanvas.open {
+  left: 0 !important;
+}
+
+.navbar-menu__list-offcanvas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.navbar-menu__list-offcanvas-item > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: large;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar-menu__list-offcanvas-item > a:hover {
+  color: #147efb;
+}
+
+.navbar-menu__xmark-button {
+  background: transparent;
+  border: none;
+  font-size: large;
+  position: absolute;
+  right: 4rem;
+  top: 1.5rem;
+}
+
+.navbar-menu__xmark-button:hover {
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar-menu__list {
+    display: none;
+  }
+  .navbar-menu__hamburger-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dropdown__menu-list {
+    left: 2rem;
+    width: unset;
+  }
+}
 /* :root {
   --light: white;
   --dark: black;
@@ -187,22 +269,4 @@ Navbar
 .dropdown__menu-item > a:hover {
   background: var(--theme-button-bg);
   border-radius: 8px;
-}
-
-Responsive Design
-@media screen and (max-width: 768px) {
-  .menu__list {
-    display: none;
-  }
-  .navbar__menu-button,
-  .dropdown__menu-list {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .dropdown__menu-list {
-    left: 2rem;
-    width: unset;
-  }
 } */
