@@ -3,7 +3,14 @@ hamburgerBtn.addEventListener('click', () => {
     document.querySelector('.navbar-menu__offcanvas').classList.toggle('open');
 });
 
-xmarkBtn = document.getElementById('xmarkButton');
-xmarkBtn.addEventListener('click', () => {
+const closeOffcanvasMenu = () => {
     document.querySelector('.navbar-menu__offcanvas').classList.remove('open');
+}
+xmarkBtn = document.getElementById('xmarkButton');
+navMenuBtn = document.querySelector('.navbar-menu__list-offcanvas-item');
+xmarkBtn.addEventListener('click', () => {
+    closeOffcanvasMenu();
+});
+navMenuBtn.addEventListener('click', () => {
+    closeOffcanvasMenu();
 })
