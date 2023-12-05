@@ -1,165 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This is a portfolio page by MKS">
-  <title>MKS's Ornament</title>
-  <link rel="stylesheet" href="src/css/style.css">
-</head>
-<body>
-  <header class="navbar">
-    <h3 class="navbar-brand"><a href="/">Rizqi MKS</a></h3>
-    <nav class="navbar-menu">
-      <ul class="navbar-menu__list">
-        <li class="navbar-menu__list-item"><a href="#home">Home</a></li>
-        <li class="navbar-menu__list-item"><a href="#about">About</a></li>
-        <li class="navbar-menu__list-item"><a href="#projects">Projects</a></li>
-        <li class="navbar-menu__list-item"><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="hamburgerButton" class="navbar-menu__hamburger-button pointer"><span class="fa-solid fa-bars"></span></button>
-    </nav>
-  </header>
-  <!-- Offcanvas Navbar -->
-  <div class="navbar-menu__offcanvas">
-    <button id="xmarkButton" class="navbar-menu__xmark-button pointer"><span class="fa-solid fa-xmark"></span></button>
-    <ul class="navbar-menu__list-offcanvas">
-      <li class="navbar-menu__list-offcanvas-item"><a href="#home">Home</a></li>
-      <li class="navbar-menu__list-offcanvas-item"><a href="#about">About</a></li>
-      <li class="navbar-menu__list-offcanvas-item"><a href="#projects">Projects</a></li>
-      <li class="navbar-menu__list-offcanvas-item"><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-  
-  <section id="home" class="hero">
-    <div class="hero__container">
-      <div class="hero__content">
-        <div class="hero__text-content">
-          <h1>Front End Web Developer <span class="fa-regular fa-hand-peace"></span></h1>
-          <p>Hi, I'm Rizqi Muhammad Khatami Sandi. A Junior Front-End Web Developer based in Garut, Indonesia. <a href="https://maps.app.goo.gl/rL6BQuCMHXUyZWq57" target="_blank" rel="noreferrer noopener"><span class="fa-solid fa-location-dot" style="color: crimson;"></span></a></p>
-          <div>
-            <a href="https://www.linkedin.com/in/rizqi-muhammad-khatami-sandi-b612841a6/" target="_blank" rel="noreferrer noopener"><span class="fa-brands fa-linkedin"></span></a>
-            <a href="https://github.com/mksdesuyo/" target="_blank" rel="noreferrer noopener"><span class="fa-brands fa-github"></span></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a portfolio website made by MKS"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/rmks_arabic.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>MKS's Ornament v.2</title>
+  </head>
+  <body>
+    <header class="app-header">
+      <nav class="app-header__nav-bar">
+        <p class="nav-bar__brand">Rizqi MKS</p>
+        <ul class="nav-bar__list">
+          <li class="nav-bar__list-item"><a href="#hero">Home</a></li>
+          <li class="nav-bar__list-item"><a href="#about">About</a></li>
+          <li class="nav-bar__list-item"><a href="#projects">Projects</a></li>
+          <li class="nav-bar__list-item"><a href="#">Contact</a></li>
+        </ul>
+        <label for="themeToggle" class="theme-switch">
+          <input type="checkbox" name="theme-toggle" id="themeToggle" />
+          <div class="slider round"></div>
+        </label>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero-container">
+          <div class="hero-text__content">
+            <h1 class="hero-text__heading">Junior Web Developer</h1>
+            <p class="hero-text__intro">
+              Hi! I’m <span>Rizqi Muhammad Khatami Sandi</span>. A Passionate
+              Junior Web Developer based in Garut, Indonesia.
+            </p>
+            <a href="#" class="hero-text__anchor"
+              ><button class="hero-text__button">See My Work</button></a
+            >
+          </div>
+          <div class="hero-image__content">
+            <img
+              src="images/rmks_selfie.png"
+              alt="Selfie Picture of Rizqi MKS"
+            />
           </div>
         </div>
-        <div class="hero__image-content">
-          <img src="assets/img/logo_nama.jpg" alt="Nama MKS" class="hero-image">
+      </section>
+      <section id="about">
+        <div class="about-container">
+          <h2 class="about__heading">About</h2>
+          <div class="about-content">
+            <hr class="about-content__line" />
+            <p class="about-content__paragraph">
+              As a Junior Front-End Web Developer, I possess a good arsenal of
+              skills in HTML, CSS, & Javascript. I pursue best practices
+              whenever possible. I am also the kind of person who thrives in
+              collaborating with teams to build web applications. For that
+              reason, I have decent skill in utilizing Version Control System
+              such as Git. I dig into learning various things related to
+              technologies like GNU/Linux Operating System. Ps: besides
+              programming and techs, I also like learning different languages.
+              As of now, I can speak English and Japanese in professional and
+              conversational level.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="skills">
-        <p>Tech I Use</p>
-        <ul>
-          <li><img src="https://skillicons.dev/icons?i=html,css" alt="HTML & CSS Icons"></li>
-          <li><img src="https://skillicons.dev/icons?i=js,php" alt="JS & PHP Icons"></li>
-          <li><img src="https://skillicons.dev/icons?i=bootstrap,tailwind" alt="Bootstrap & Tailwind Icons"></li>
-          <li><img src="https://skillicons.dev/icons?i=git,github" alt="Git & GitHub Icons"></li>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="about__container">
-      <div class="about__content">
-        <img class="about-image" src="assets/img/logo_nama.jpg" alt="Logo nama">
-        <div class="about__text-content">
-          <p>ABOUT ME</p>
-          <h2>A Junior Front-End Web Developer based in Garut, Indonesia <a href="https://maps.app.goo.gl/rL6BQuCMHXUyZWq57" target="_blank" rel="noreferrer noopener"><span class="fa-solid fa-location-dot" style="color: crimson;"></span></a></h2>
-          <p>As a Junior Front-End Web Developer, I possess a good arsenal of skills in HTML, CSS, & Javascript. I pursue best practices whenever I code. I am also the kind of person who thrives in collaborating with teams to build web applications. For that reason, I have a decent skill in utilizing Version Control System such as Git. Ps: besides programming, I also like learning different languages. As of now, I can speak English and Japanese in professional and conversational level.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-    <div class="projects__container">
-      <p>PORTFOLIO</p>
-      <h2>This is what I've been making so far <span class="fa-solid fa-puzzle-piece" style="color: yellowgreen;"></span></h2>
-        <div class="projects__content">
-          <div class="project__container">
-            <a href="https://aiticamp.netlify.app" target="_blank" rel="noreferrer noopener">
-              <img src="assets/img/aiticamp.jpg" alt="Link to Aiticamp project" class="project__image-content">
-            </a>
-            <div class="project__text-content">
-              <h3>AITICAMP <br><span style="color: rgb(99, 99, 99);">(November 2022)</span></h3>
-              <p>This is a simple landing web page. Was made by team of my friend and I, when we were studying together at SIB Hacktiv8 x Kampus Merdeka program.</p>
-              <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap" alt="tech used for particular project" style="width: 210px;">
-              <div>
-                <a href="https://aiticamp.netlify.app" target="_blank" rel="noreferrer noopener">
-                  Live Demo <span class="fa-solid fa-arrow-up-right-from-square"></span>
-                </a>
+        <div class="tech-container">
+          <div class="tech-header">
+            <h3 class="tech-header__heading">Tech I've Used</h3>
+            <hr class="tech-header__line" />
+          </div>
+          <ul class="tech-grid__list">
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=html"
+                  alt="HTML Icon"
+                  width="40"
+                />
+                <p>HTML</p>
               </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=css"
+                  alt="CSS Icon"
+                  width="40"
+                />
+                <p>CSS</p>
+              </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=js"
+                  alt="JavaScript Icon"
+                  width="40"
+                />
+                <p>JavaScript</p>
+              </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=php"
+                  alt="PHP Icon"
+                  width="40"
+                />
+                <p>PHP</p>
+              </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=sass"
+                  alt="Sass Icon"
+                  width="40"
+                />
+                <p>Sass</p>
+              </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=bootstrap"
+                  alt="Bootstrap Icon"
+                  width="40"
+                />
+                <p>Bootstrap</p>
+              </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=tailwind"
+                  alt="Tailwind CSS Icon"
+                  width="40"
+                />
+                <p>Tailwind CSS</p>
+              </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=git"
+                  alt="Git Icon"
+                  width="40"
+                />
+                <p>Git</p>
+              </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=github"
+                  alt="GitHub Icon"
+                  width="40"
+                />
+                <p>GitHub</p>
+              </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=mysql"
+                  alt="MySQL Icon"
+                  width="40"
+                />
+                <p>MySQL</p>
+              </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=nodejs"
+                  alt="Node.js Icon"
+                  width="40"
+                />
+                <p>Node.js</p>
+              </div>
+            </li>
+            <li class="tech-grid__list-item">
+              <div class="tech-card">
+                <img
+                  src="https://skillicons.dev/icons?i=figma"
+                  alt="Figma Icon"
+                  width="40"
+                />
+                <p>Figma</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="projects-container">
+          <div class="projects-header">
+            <h2 class="projects__heading">Portfolio</h2>
+            <hr class="projects__line" />
+          </div>
+          <div class="project">
+            <div class="project-img">
+              <a
+                href="https://mks-todolist.netlify.app"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><img src="images/mks-todolist.jpg" alt="template"
+              /></a>
+            </div>
+            <div class="project-text__content">
+              <header class="project-header">
+                <h3 class="project-text__heading">DOIST</h3>
+                <small class="project-text__small">(October 2023)</small>
+              </header>
+              <p>
+                This is a simple to-do-list web application. Was made by myself,
+                with reference from Dicoding Academy's class modules.
+              </p>
+              <a
+                href="https://mks-todolist.netlify.app"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="hero-text__anchor"
+                ><button class="hero-text__button">Live Demo</button></a
+              >
             </div>
           </div>
-          <div class="project__container-reversed">
-            <a href="https://close-weather-map.netlify.app" target="_blank" rel="noreferrer noopener">
-              <img src="assets/img/close-weather-app.jpg" alt="Link to Close Weather App project" class="project__image-content">
-            </a>
-            <div class="project__text-content">
-              <h3>CLOSE WEATHER MAP <br><span style="color: rgb(99, 99, 99);">(December 2022)</span></h3>
-              <p>This is a simple weather check and map search web page. Was made by team of my friend and I, when we were studying together at SIB Hacktiv8 x Kampus Merdeka program.</p>
-              <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap" alt="tech used for particular project" style="width: 210px;">
-              <div>
-                <a href="https://close-weather-map.netlify.app" target="_blank" rel="noreferrer noopener">
-                  Live Demo <span class="fa-solid fa-arrow-up-right-from-square"></span>
-                </a>
-              </div>
+          <div class="project">
+            <div class="project-text__content">
+              <header class="project-header">
+                <h3 class="project-text__heading">CLOSE WEATHER MAP</h3>
+                <small class="project-text__small">(December 2022)</small>
+              </header>
+              <p>
+                This is a simple weather check and map search web page. Was made by team of my friend and I, when we were studying together at SIB Hacktiv8 x Kampus Merdeka program.
+              </p>
+              <a
+                href="https://close-weather-map.netlify.app"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="hero-text__anchor"
+                ><button class="hero-text__button">Live Demo</button></a
+              >
+            </div>
+            <div class="project-img">
+              <a
+                href="https://close-weather-map.netlify.app"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><img src="images/close-weather-app.jpg" alt="Image that link to Close Weather Map project"
+              /></a>
             </div>
           </div>
-          <div class="project__container">
-            <a href="https://mks-todolist.netlify.app" target="_blank" rel="noreferrer noopener">
-              <img src="assets/img/mks-todolist.jpg" alt="Link to DOIST project" class="project__image-content">
-            </a>
-            <div class="project__text-content">
-              <h3>DOIST <br><span style="color: rgb(99, 99, 99);">(October 2023)</span></h3>
-              <p>This is a simple to-do-list web application. Was made by myself, with reference from Dicoding Academy's class modules.</p>
-              <img src="https://skillicons.dev/icons?i=html,css,js,sass" alt="tech used for particular project" style="width: 210px;">
-              <div>
-                <a href="https://mks-todolist.netlify.app" target="_blank" rel="noreferrer noopener">
-                  Live Demo <span class="fa-solid fa-arrow-up-right-from-square"></span>
-                </a>
-              </div>
+          <div class="project">
+            <div class="project-img">
+              <a
+                href="https://aiticamp.netlify.app"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><img src="images/aiticamp.jpg" alt="Image that link to Aiticamp project"
+              /></a>
+            </div>
+            <div class="project-text__content">
+              <header class="project-header">
+                <h3 class="project-text__heading">AITICAMP</h3>
+                <small class="project-text__small">(November 2022)</small>
+              </header>
+              <p>
+                This is a simple landing web page. Was made by team of my friend and I, when we were studying together at SIB Hacktiv8 x Kampus Merdeka program.
+              </p>
+              <a
+                href="https://aiticamp.netlify.app"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="hero-text__anchor"
+                ><button class="hero-text__button">Live Demo</button></a
+              >
             </div>
           </div>
         </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="contact__container">
-      <div class="contact__text-content">
-        <p>CONTACT</p>
-        <h2>If you need something, just contact me <span class="fa-regular fa-hand-point-down"></span></h2>
-      </div>
-      <ul class="contact__list">
-        <li class="contact__list-item">
-          <i class="fa-regular fa-map" style="font-size: xx-large; color: #147efb;"></i>
-          <div class="contact-item__detail">
-            <h3>Location</h3>
-            <a href="https://maps.app.goo.gl/rL6BQuCMHXUyZWq57" target="_blank" rel="noreferrer noopener">Garut, Indonesia</a>
+      </section>
+      <section id="contacts">
+        <div class="contacts-container">
+          <h2 class="contacts__heading">Contact</h2>
+          <div class="contact-list">
+            <div class="contact-item">
+              <p>icon</p>
+              <p>rizqimks</p>
+            </div>
+            <div class="contact-item">
+              <p>icon</p>
+              <p>rizqimks</p>
+            </div>
+            <div class="contact-item">
+              <p>icon</p>
+              <p>rizqimks</p>
+            </div>
           </div>
-        </li>
-        <li class="contact__list-item">
-          <i class="fa-regular fa-envelope" style="font-size: xx-large; color: #147efb;"></i>
-          <div class="contact-item__detail">
-            <h3>Email</h3>
-            <a href="mailto:rizqimks@gmail.com" target="_blank" rel="noreferrer noopener">rizqimks@gmail.com</a>
-          </div>
-        </li>
-        <li class="contact__list-item">
-          <i class="fa-brands fa-linkedin" style="font-size: xx-large; color: #147efb;"></i>
-          <div class="contact-item__detail">
-            <h3>Linkedin</h3>
-            <a href="https://www.linkedin.com/in/rizqi-muhammad-khatami-sandi-b612841a6/" target="_blank" rel="noreferrer noopener">Rizqi Muhammad Khatami Sandi</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <footer class="footer">
-    <p>Made with <span class="fa-solid fa-heart" style="color: red;"></span> by MKS - Huge inspiration (I literally just clone it btw :v) came from <a href="https://www.stefantopalovic.com/" target="_blank" rel="noreferrer noopener" style="color: #fff;">Stefan Topalovic</a></p>
-  </footer>
-  <script src="https://kit.fontawesome.com/73346532eb.js" crossorigin="anonymous"></script>
-  <script src="src/js/script.js"></script>
-</body>
+        </div>
+      </section>
+    </main>
+    <footer class="app-footer">
+      <p>Made with love by Rizqi MKS</p>
+    </footer>
+  </body>
 </html>
